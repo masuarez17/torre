@@ -1,33 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-      <h1 class="text-red-500">HELLO WORLD</h1>
-    </div>
+  <transition name="fadeTop">
     <router-view/>
-  </div>
+  </transition>
 </template>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.fadeTop-enter,
+.fadeTop-leave {
+  opacity: 0;
+  transform: translateY(-2em);
 }
-
-#nav {
-  padding: 30px;
+.fadeTop-enter-active,
+.fadeTop-leave-active {
+  transition: all 0.5s ease;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.fadeLeft-enter,
+.fadeLeft-leave {
+  opacity: 0;
+  transform: translateX(-2em);
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.fadeLeft-enter-active,
+.fadeLeft-leave-active {
+  transition: all 0.5s ease;
+}
+.fadeRight-enter,
+.fadeRight-leave {
+  opacity: 0;
+  transform: translateX(2em);
+}
+.fadeRight-enter-active,
+.fadeRight-leave-active {
+  transition: all 0.5s ease;
+}
+.fadeBot-enter,
+.fadeBot-leave {
+  opacity: 0;
+  transform: translateY(2em);
+}
+.fadeBot-enter-active,
+.fadeBot-leave-active {
+  transition: all 0.5s ease;
 }
 </style>
