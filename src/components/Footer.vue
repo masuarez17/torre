@@ -1,11 +1,7 @@
 <template>
-  <div class="container-fluid d-flex flex-wrap justify-content-center">
-    <div class="copyright d-flex flex-wrap">
-          <span>
-            &copy; Made by <a href="https://github.com/masuarez17">Marcos Suarez</a>&nbsp;
-          </span>
-    </div>
-  </div>
+  <span class="text-white">
+    &copy; Made by <a class="italic hover:text-blue-500" href="https://github.com/masuarez17">Marcos Suarez</a>&nbsp;
+  </span>
 </template>
 
 <script>
