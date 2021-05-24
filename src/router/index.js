@@ -39,10 +39,11 @@ const routes = [
       {
         path: '/search',
         name: 'Search',
-        component: Search
+        component: Search,
+        props: route => ({ query: route.query.q })
       },
       {
-        path: '/genome',
+        path: '/genome/:username',
         name: 'Genome',
         component: Genome
       }

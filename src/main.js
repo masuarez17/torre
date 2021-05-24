@@ -6,7 +6,11 @@ import store from './store'
 // Tailwindcss import
 import './index.css'
 
-Vue.config.productionTip = false
+// Recorder
+import VueRecord from '@codekraft-studio/vue-record'
+Vue.use(VueRecord)
+
+Vue.config.productionTip = true
 
 new Vue({
   router,

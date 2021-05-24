@@ -1,7 +1,5 @@
 <template>
-  <transition name="fadeTop">
-    <router-view/>
-  </transition>
+  <router-view/>
 </template>
 <style>
 .fadeTop-enter,
